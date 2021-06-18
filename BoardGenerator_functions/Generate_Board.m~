@@ -1,4 +1,4 @@
-function [Board_Array,Board,dimension] = Generate_Board(dimension)
+function [Board_Array,Board,dimension,coords] = Generate_Board(dimension)
 %%
 %
 Load_25_Cubes
@@ -18,12 +18,12 @@ counter=0;
 figure()
 for ijk=1:dimension(1)
     for ijkl=1:dimension(2)
-        ijk
-        ijkl
+%         ijk
+%         ijkl
         counter=counter+1;
         text(ijk,ijkl,Board{counter},'fontsize',25,'fontweight','bold')
         hold on
-        
+        coords(:,counter)=[ijk ijkl
     end
 
 end
