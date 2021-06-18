@@ -1,0 +1,26 @@
+%% Load Dice Configurations:
+Cube{1}='QBZJXK';
+Cube{2}='TOUTO';
+Cube{3}='OVWRGR';
+Cube{4}='AAAFSR';
+Cube{5}='AUMEEG';
+Cube{6}='HHLRDO';
+Cube{7}='NHDTHO';
+Cube{8}='LHNROD';
+Cube{9}='AFAISR';
+Cube{10}='YIFASR';
+Cube{11}='TELPCI';
+Cube{12}='SSNSEU';
+Cube{13}='RIYPRH';
+Cube{14}='DORDLN';
+Cube{15}='CCWNST';
+Cube{16}='TTOTEM';
+Cube{17}='SCTIEP';
+Cube{18}='EANDNN';
+Cube{19}='MNNEAG';
+Cube{20}='UOTOWN';
+Cube{21}='AEAEEE';
+Cube{22}='YIFPSR';
+Cube{23}='EEEEMA';
+Cube{24}='ITITIE';
+Cube{25}='ETILIC';
