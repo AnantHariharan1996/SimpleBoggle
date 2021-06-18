@@ -16,13 +16,11 @@ if any(strcmp(Board,word(1)))
     
     for ijkl= 1:length(idxs)
     % check every starting letter
-        breaker=0;
-        current_Letter=First_Letter;
-        lettercounter=1;
         
-        while breaker=0 && lettercounter<length(word)
+        current_Letter=First_Letter;
+        for ijk=1:length(word)-1
 
-            current_coord = coords(idxs(ijkl),:);
+            current_coord = coords(idxs(ijkl),:)
             
             %dist_list = get_distances(current_coord,coords);
             dist_list = get_distances(current_coord,coords);
@@ -30,14 +28,9 @@ if any(strcmp(Board,word(1)))
             
             Adjacent_Letters=Board(Adjacent_idxs);
             
-            nextchecks = strcmp(Adjacent_Letters,word(lettercounter+1));
+            nextchecks = strcmp(Adjacent_Letters,word(ijk));
 
-            lettercounter=lettercounter+1;
             
-            if ~any(nextchecks)
-                breaker=1;
-                
-            end
             
         end
         
