@@ -1,9 +1,10 @@
 # SimpleBoggle
 This is a simple package that can generate and 'solve' a boggle board of any dimensions. Solving takes under a minute- just enough time for you to leave this package running in the background while you tally you and your friends' scores up! All solutions are based on the 2019 Scrabble Dictionary- if you hate some of the words it spits out, blame the jokers at Scrabble who came up with this. 
 
-Currently, this routine solves for words of 3 or more letters. 
+Preparing to run:
+**Before running, Make sure all folders in this package containing helper functions are in your MATLAB path**
 
-There are 3 main routines, or modes of running this code:
+There are 3 main routines, or modes of running this code. 
 
 (1) If you just want to -generate- a boggle board. Just run Generate_Board_Example.m. 
 
