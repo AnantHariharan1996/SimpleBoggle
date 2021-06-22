@@ -6,5 +6,6 @@ Currently, the code solves for words of 3 or more letters.
 
 
 *Future Improvements*:
+
 A massive issue with this version is that this code will not work if your board has a 'Qu' tile. 
 This will be fixed in a future release.
