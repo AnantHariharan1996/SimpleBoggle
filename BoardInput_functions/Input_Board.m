@@ -10,8 +10,15 @@ for ijk=1:dimension(1)
     for ijkl=1:dimension(2)
         counter=counter+1
         current_letter= input(['Enter letter number ' num2str(counter)],'s')
+        while length(current_letter) > 1
+            disp('Try again. Only enter a single letter!')
+            current_letter= input(['Enter letter number ' num2str(counter)],'s')
+           
+        end
+        
+        
         Board{counter}=current_letter;
-
+        
          text(ijk,ijkl,Board{counter},'fontsize',25,'fontweight','bold')
         hold on   
     
