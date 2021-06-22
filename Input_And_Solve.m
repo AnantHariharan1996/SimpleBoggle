@@ -11,7 +11,7 @@ clear; close all; clc
 
 %%% Setup
 dimension=[5 5];
-GameName='Trial'
+GameName='AnantAndErica'
 DateString = datestr(datetime);
 
 %%%
