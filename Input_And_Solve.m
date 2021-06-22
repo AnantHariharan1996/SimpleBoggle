@@ -13,7 +13,8 @@ clear; close all; clc
 dimension=[5 5];
 GameName='AnantAndErica'
 DateString = datestr(datetime);
-
+%%% Do you want to save this board?
+save_board=0;
 %%%
 
 
@@ -37,4 +38,8 @@ Solved_WordList{idx}
 Str=['The maximum number of points possible is ' num2str(NumPoints) '!'];
 disp(Str)
 
-%close all
+
+if save_board
+    save
+    movefile('matlab.mat',[GameName '_' DateString '.mat'])
+end
