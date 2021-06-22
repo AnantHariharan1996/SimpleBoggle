@@ -15,7 +15,9 @@ There are 3 main routines, or modes of running this code.
 (3) If you want to solve a Boggle board that you input by hand, run Input_And_Solve.m
 
 The Solvers output a text file with all solutions, with the maximum number of points in the filename and output to the command line. 
-You can save the boggle board you generate if you wish and return to using the codes later by saving the three variables dimension,Board,and coords, which the functions need. 
+
+Want to pause and come back to things later?
+You can save the boggle board you generate if you wish and return by saving the three variables dimension,Board,and coords, which the functions need to run.
 
 *Future Improvements*:
 
