@@ -29,14 +29,14 @@ toc
 writecell(Solved_WordList',['Solutions_' GameName '_' DateString '.txt'])
 
 
-
-%% Find large words
-idx = find(PointList>4);
-Solved_WordList{idx}
-
 [NumPoints,PointList] = TallyUpPoints(Solved_WordList);
 Str=['The maximum number of points possible is ' num2str(NumPoints) '!'];
 disp(Str)
+
+
+%% Find large words
+idx = find(PointList>3);
+Solved_WordList{idx}
 
 
 if save_board
