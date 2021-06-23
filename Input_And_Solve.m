@@ -11,7 +11,7 @@ clear; close all; clc
 
 %%% Setup
 dimension=[5 5];
-GameName='AnantAndErica'
+GameName='Test'
 DateString = datestr(datetime);
 %%% Do you want to save this board?
 save_board=0;
