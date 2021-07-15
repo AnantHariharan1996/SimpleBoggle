@@ -1,5 +1,5 @@
 # SimpleBoggle
-Ever wanted to make sure you weren't missing any words when you paintstakingly solved your Boggle board? This is a simple package that can generate and 'solve' a boggle board of any rectangular [n x m] dimensions. Solving typically takes under a minute- just enough time for you to leave this package running in the background while you tally you and your friends' scores up! It's always exciting to see how many additional words were lurking in the background.
+Ever wanted to make sure you weren't missing any words when you painstakingly solved your Boggle board? This is a simple package that can generate and 'solve' a boggle board of any rectangular [n x m] dimensions. Solving typically takes under a minute- just enough time for you to leave this package running in the background while you tally you and your friends' scores up! It's always exciting to see how many additional words were lurking in the background.
 
 All solutions are based on the 2019 Scrabble Dictionary- if you hate some of the words it spits out, blame the jokers at Scrabble who came up with this. 
 
