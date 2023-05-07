@@ -11,7 +11,11 @@ Y = randsample(25,Num_Cubes);
        CurrCube=Cube{Y(ijk)};
        randIdx  = randperm(length(CurrCube),1); % generate the random index into array
        Letter = CurrCube(randIdx);  
+      if strcmp(Letter,'Q')
+    Letter = 'Qu';
+      end
        Board{ijk}=Letter;
+
     end
 
 counter=0;
@@ -21,9 +25,10 @@ for ijk=1:dimension(1)
 %         ijk
 %         ijkl
         counter=counter+1;
-        text(ijk,ijkl,Board{counter},'fontsize',25,'fontweight','bold')
+        text(ijk,ijkl,Board{counter},'fontsize',55,'fontweight','bold','VerticalAlignment','middle','HorizontalAlignment','center')
         hold on
         coords(counter,:)=[ijk ijkl];
+        rectangle('Position',[ijk-0.5 ijkl-0.5 1 1],'Curvature',0.2,'LineWidth', 2);
     end
 
 end
