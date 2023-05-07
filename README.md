@@ -21,7 +21,4 @@ You can save the boggle board you generate if you wish and return by saving the 
 
 *Future Improvements*:
 
-A massive issue with this version is that this code will not work if your board has a 'Qu' tile. 
-This will be fixed in a future release.
-
 The algorithm I used is not the quickest, so I welcome any suggestions to promote speedup.
