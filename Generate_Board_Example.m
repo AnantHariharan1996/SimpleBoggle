@@ -8,8 +8,8 @@ addpath(genpath(pwd))
 clear; close all; clc
 dimension=[5 5];
 %%% Do you want to save this board?
-save_board=0;
-GameName='Trial';
+save_board=1;
+GameName='TheMark';
 DateString = datestr(datetime);
 
 [Board,dimension,coords]= Generate_Board(dimension);

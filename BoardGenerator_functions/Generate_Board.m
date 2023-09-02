@@ -42,5 +42,6 @@ set(gca,'yticklabel',[])
 box on
 set(gca,'fontweight','bold')
 title(['Boggle Board: Configured on ' date],'fontsize',18)
+set(gcf,"Position",[476 297 560 483])
 end
 
