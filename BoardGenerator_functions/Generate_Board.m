@@ -3,7 +3,7 @@ function [Board,dimension,coords] = Generate_Board(dimension)
 %
 Load_25_Cubes
 Num_Cubes=dimension(1)*dimension(2);
-
+ColorOn = 0;
 Y = randsample(25,Num_Cubes);
 
     for ijk=1:Num_Cubes
@@ -28,7 +28,12 @@ for ijk=1:dimension(1)
         text(ijk,ijkl,Board{counter},'fontsize',55,'fontweight','bold','VerticalAlignment','middle','HorizontalAlignment','center')
         hold on
         coords(counter,:)=[ijk ijkl];
-        rectangle('Position',[ijk-0.5 ijkl-0.5 1 1],'Curvature',0.2,'LineWidth', 2);
+        if ColorOn
+        rectangle('Position',[ijk-0.5 ijkl-0.5 1 1],'Curvature',0.2,'LineWidth', 2,'FaceColor','cyan','FaceAlpha',0.05);
+
+        else
+        rectangle('Position',[ijk-0.5 ijkl-0.5 1 1],'Curvature',0.2,'LineWidth', 2)
+        end%'FaceColor','cyan','FaceAlpha',0.05);
     end
 
 end
@@ -41,7 +46,7 @@ set(gca,'ytick',[])
 set(gca,'yticklabel',[])
 box on
 set(gca,'fontweight','bold')
-title(['Boggle Board: Configured on ' date],'fontsize',18)
+title(['Boggle Board: Configured on ' date],'fontsize',24,'FontName','Gill Sans','FontWeight','bold')
 set(gcf,"Position",[476 297 560 483])
 end
 

@@ -9,7 +9,7 @@ clear; close all; clc
 dimension=[5 5];
 %%% Do you want to save this board?
 save_board=1;
-GameName='TheMark';
+GameName=['Jan2_2025_2'];
 DateString = datestr(datetime);
 
 [Board,dimension,coords]= Generate_Board(dimension);
@@ -18,4 +18,5 @@ DateString = datestr(datetime);
 if save_board
     save
     movefile('matlab.mat',[GameName '_' DateString '.mat'])
+    saveas(gcf,[GameName '_' DateString '.png'])
 end
